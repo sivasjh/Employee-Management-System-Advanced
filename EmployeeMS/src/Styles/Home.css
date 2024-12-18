@@ -1,0 +1,107 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #0a0f29; /* Deep navy blue */
+    color: #ffffff;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  /* Header Section */
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #1e3a5f, #27496d);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ffda79; /* Subtle yellow accent */
+  }
+  
+  .dashboard-header p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #a6b8cf;
+  }
+  
+  /* Stats Section */
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  /* Stat Card Styling */
+  .stat-card {
+    background: #1b2b48; /* Dark navy with contrast */
+    border: 1px solid #1e3a5f;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .stat-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #80d0ff; /* Light blue accent */
+  }
+  
+  .stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .stat-card button {
+    margin-top: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    background-color: #ffda79; /* Bright yellow button */
+    color: #0a0f29;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .stat-card button:hover {
+    background-color: #ffc045;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .dashboard-header p {
+      font-size: 0.9rem;
+    }
+  
+    .stat-card p {
+      font-size: 1.3rem;
+    }
+  }
+  

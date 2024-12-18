@@ -1,0 +1,106 @@
+.attendanceWrapper {
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+  background-color: #f3f6fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: black;
+}
+
+.attendanceHeader {
+  text-align: center;
+}
+
+.attendanceTitle {
+  font-size: 36px;
+  color: #00264d; /* Navy Blue */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.attendanceTableWrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  width: 90%;
+}
+
+.attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  color: black;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+  padding: 16px 20px;
+}
+
+.attendanceTable th {
+  background-color: #00264d; /* Navy Blue */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.attendanceTable tbody tr:nth-child(odd) {
+  background-color: #f9fafc;
+}
+
+.attendanceTable tbody tr:nth-child(even) {
+  background-color: #eef3f9;
+}
+
+.attendanceTable tbody tr:hover {
+  background-color: #ddeeff;
+  transform: scale(1.01);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.statusCell {
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Status Highlighting */
+.statusPresent .statusCell {
+  background-color: #d1f5d3; /* Light Green */
+  color: #007500; /* Dark Green */
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.statusAbsent .statusCell {
+  background-color: #fdd5d7; /* Light Red */
+  color: #c80000; /* Dark Red */
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.statusHalfDay .statusCell {
+  background-color: #fff4cc; /* Light Yellow */
+  color: #d68400; /* Dark Orange */
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .attendanceTitle {
+    font-size: 28px;
+  }
+
+  .attendanceTable th,
+  .attendanceTable td {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+}

@@ -1,0 +1,103 @@
+.employeeDetail {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.employeeHeader {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.employeeHeader h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.employeeHeader p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.employeeCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.photoSection {
+  flex: 1 1 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.employeePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.placeholderPhoto {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: #ddd;
+  color: #666;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.employeeInfo {
+  flex: 2 1 400px;
+  padding-left: 20px;
+}
+
+.employeeInfo h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.employeeInfo p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.actionButtons {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.editBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.logoutBtn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

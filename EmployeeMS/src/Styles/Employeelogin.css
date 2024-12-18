@@ -1,0 +1,82 @@
+/* Reset some basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background for the page */
+    color: #333; /* Default dark text color */
+  }
+  
+  .employee-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #ffffff; /* White background for the login container */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .employee-login-box {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the login form */
+    padding: 20px;
+    background-color: #f5f5f5; /* Slightly off-white background for the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .employee-login-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue title color */
+  }
+  
+  .employee-login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .employee-login-box input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight input when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .employee-login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .employee-login-box button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .employee-login-box p {
+    font-size: 14px;
+    color: #666; /* Subtle gray for additional text */
+    margin-top: 10px;
+  }
+  
+  .employee-login-box a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .employee-login-box a:hover {
+    text-decoration: underline;
+  }
+  

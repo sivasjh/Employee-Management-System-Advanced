@@ -1,0 +1,186 @@
+/* General Styles */
+.body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+}
+
+/* Container */
+.loginAsModern {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left Section */
+.leftModern {
+  flex: 1.2;
+  background: linear-gradient(135deg, #004e89, #001f54);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+}
+
+.leftModern h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.leftModern .quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.leftModern p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Decorative Employee Icon */
+.leftModern::before {
+  content: "\f0b1"; /* Unicode for user group icon (FontAwesome) */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 12rem;
+  position: absolute;
+  top: 20%;
+  left: -40%;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.leftModern::after {
+  content: "\f007"; /* Unicode for user icon (FontAwesome) */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 8rem;
+  position: absolute;
+  bottom: 10%;
+  right: -30%;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Right Section */
+.rightModern {
+  flex: 1;
+  background: url('../assets/photo1.webp') center/cover no-repeat; /* Background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Login Box */
+.loginBox {
+  background: rgba(255, 255, 255, 0.4); /* Semi-transparent background */
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.loginBox h2 {
+  font-size: 2rem;
+  color: #001f54;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Buttons */
+.modernBtn {
+  width: 230px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+
+.adminBtn {
+  background: #004e89;
+  color: white;
+}
+
+.adminBtn:hover {
+  background: #002e5d;
+  transform: translateY(-3px);
+}
+
+.employeeBtn {
+  background: #006bbf;
+  color: white;
+}
+
+.employeeBtn:hover {
+  background: #004a8d;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+.leftModern h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.leftModern .quote {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loginAsModern {
+    flex-direction: column;
+  }
+
+  .leftModern,
+  .rightModern {
+    flex: none;
+    width: 100%;
+    height: 50%;
+  }
+
+  .leftModern {
+    padding: 1.5rem;
+  }
+
+  .loginBox {
+    padding: 2rem 2.5rem;
+  }
+}

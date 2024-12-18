@@ -1,0 +1,106 @@
+/* Container styling for the entire page */
+.container {
+    background: linear-gradient(135deg, #3b5998, #192f6a); /* Gradient for a modern look */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto; /* Centered on the page */
+    color: #ffffff; /* White text for better readability */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Heading styles */
+h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f4d03f; /* Golden color for emphasis */
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* Card container for each leave request */
+.leaveCard {
+    background: #2e3b55; /* Card color */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.leaveCard:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Badge for status */
+.status {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Dynamic status colors */
+.status.Approved {
+    background-color: #28a745; /* Green for approved */
+    color: #ffffff;
+}
+
+.status.Rejected {
+    background-color: #dc3545; /* Red for rejected */
+    color: #ffffff;
+}
+
+.status.Pending {
+    background-color: #ffc107; /* Yellow for pending */
+    color: #000000;
+}
+
+/* Styling for buttons */
+button {
+    background: #f4d03f; /* Golden button */
+    color: #2e3b55; /* Contrasting text */
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffc107; /* Vibrant hover effect */
+    color: #000000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 2px solid #ffffff; /* Focus for accessibility */
+    outline-offset: 2px;
+}
+
+/* Paragraph styles inside the cards */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+strong {
+    font-weight: bold;
+    color: #f4d03f; /* Highlighted text */
+}

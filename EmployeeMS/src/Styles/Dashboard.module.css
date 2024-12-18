@@ -1,0 +1,225 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ecf0f1; /* Light neutral background */
+  color: #34495e; /* Dark gray for text */
+  line-height: 1.5;
+}
+
+/* Dashboard Layout */
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1f2a44; /* Deep blue for a corporate, professional feel */
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Title */
+.sidebarTitle {
+  font-size: 1.5rem;
+  font-weight: 780;
+  color: #ecf0f1;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif; /* New modern font */
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #bdc3c7; /* Subtle light gray for the menu text */
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menuItem:hover {
+  background-color: #34495e; /* Slightly lighter deep blue for hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateX(5px); /* Subtle hover effect */
+}
+
+.menuIcon {
+  margin-right: 15px;
+  font-size: 1.4rem;
+  color: #bdc3c7; /* Soft gray for icons */
+}
+
+.menuItem:hover .menuIcon {
+  color: #ffffff; /* White icon on hover */
+}
+
+.logoutItem {
+  color: #e74c3c; /* Red for logout */
+}
+
+.logoutItem:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  background-color: #2980b9; /* Rich blue */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3498db; /* Lighter blue for hover */
+  transform: translateY(-3px); /* Subtle lift effect */
+}
+
+button:active {
+  background-color: #2980b9; /* Active state keeps the original color */
+  transform: translateY(1px); /* Subtle press effect */
+}
+
+/* Main Content (Centralized) */
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 0px;
+  background-color: #f7f9fc; /* Light background to distinguish from sidebar */
+  overflow-y: auto; /* Scrollable content */
+}
+
+/* Titles for Personal Info and Company Info */
+.formSectionTitle {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #34495e;
+  border-bottom: 2px solid #ddd;
+  z-index: 1; /* Ensure it's above the scrollable content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Sections containing form inputs */
+.formSection {
+  width: 48%; /* Adjusted width to allow more space */
+  max-height: 500px; /* Increased height */
+  overflow-y: auto; /* Allow scrolling in individual sections */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px; /* More padding inside each section */
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Layout for Form Fields */
+.addEmployeeForm {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-right: 15px; /* Prevent scroll bar from cutting off content */
+}
+
+/* Form field layout and styling */
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #555;
+}
+
+input,
+select,
+textarea {
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button Styling */
+button {
+  padding: 15px 35px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Scrollable area in the form */
+.formSectionContent {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding-right: 15px; /* Prevent scroll bar from cutting off content */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .addEmployeeForm {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formSection {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .addEmployeeContainer {
+    width: 95%;
+    padding: 30px;
+  }
+}
